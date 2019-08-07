@@ -3,7 +3,7 @@
   "description": "Migration of the data to JIRA with REST API",
   "main": "Main.xaml",
   "dependencies": {
-    "JIRA_REST_API_AUTO": "[1.0.3]",
+    "JIRA_REST_API_AUTO": "[1.0.6]",
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
     "UiPath.System.Activities": "[19.7.0]",
