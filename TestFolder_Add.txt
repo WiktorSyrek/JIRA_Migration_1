@@ -1,0 +1,50 @@
+Nie dodano Test Folder: [TF1] UAT: 400
+Nie dodano Test Folder: [TF1] UAT: 400
+Nie dodano Test Folder: [TF1] UAT: 400
+Nie dodano Test Folder: [TF2] Visibility: 400
+Nie dodano Test Folder: [TF3] Ordering: 400
+Nie dodano Test Folder: [TF4] General: 400
+Nie dodano Test Folder: [TF5] Visibility - CTLM: 400
+Nie dodano Test Folder: [TF6] Visibility - Customer + Employee Account + Employee: 400
+Nie dodano Test Folder: [TF7] Visibility - Sales Rep: 400
+Nie dodano Test Folder: [TF9] Ordering - Customer Admin: 400
+Nie dodano Test Folder: [TF10] Ordering - Customer + Employee Account + Employee: 400
+Nie dodano Test Folder: [TF12] Ordering - P&G Admin + Admin Account (System Admin): 400
+Nie dodano Test Folder: [TF13] Ordering - Sales Rep: 400
+Nie dodano Test Folder: [TF14] General - Customer + Employee Account + Employee: 400
+Nie dodano Test Folder: [TF15] General - Sales Rep: 400
+Nie dodano Test Folder: [TF16] Ordering - Master Data - Product: 400
+Nie dodano Test Folder: [TF17] Ordering - CSO/OM: 200
+Nie dodano Test Folder: [TF18] Security roles test for iSara LA: 200
+Nie dodano Test Folder: [TF21] Magento 2 UAT: 200
+Nie dodano Test Folder: [TF22] TF22 - SIT: 200
+Nie dodano Test Folder: [TF23] non-SIT test cases: 200
+Nie dodano Test Folder: [TF24] Temporary test folder for test cases that NEED TO BE CORRECTED: 200
+Nie dodano Test Folder: [TF25] Moved out of SIT, CONSOLIDATED versions of these exist in SIT folder.: 0
+Nie dodano Test Folder: [TF34] GBS Acceptance: 0
+Nie dodano Test Folder: [TF52] Test Cases not applicable to MVP: 0
+Nie dodano Test Folder: [TF69] PGC DV UAT: 0
+Nie dodano Test Folder: [TF83] Customer Management: 0
+Nie dodano Test Folder: [TF96] Shopping List V: 0
+Nie dodano Test Folder: [TF112] [SIT 2.6] New functionalities: 0
+Nie dodano Test Folder: [TF128] GDM: 0
+Nie dodano Test Folder: [TF142] PGC: 0
+Nie dodano Test Folder: [TF156] LA: 0
+Nie dodano Test Folder: [TF169] PR: 0
+Nie dodano Test Folder: [TF181] UK: 0
+Nie dodano Test Folder: [TF197] [SIT 2.8] DV TC's: 0
+Nie dodano Test Folder: [TF209] DACH AT Non-Food: 0
+Nie dodano Test Folder: [TF223] Colombia: 0
+Nie dodano Test Folder: [TF236] DACH DE PGP: 0
+Nie dodano Test Folder: [TF250] US PGP: 0
+Nie dodano Test Folder: [TF264] PGC: 0
+Nie dodano Test Folder: [TF278] DACH AT PGP: 0
+Nie dodano Test Folder: [TF291] Argentina: 0
+Nie dodano Test Folder: [TF304] DACH DE Food: 0
+Nie dodano Test Folder: [TF316] Canada PGP: 0
+Nie dodano Test Folder: [TF328] LADMAR GDM: 0
+Nie dodano Test Folder: [TF340] 2.11 API GEE: 0
+Nie dodano Test Folder: [TF352] DACH DE PGP: 0
+Nie dodano Test Folder: [TF364] US PGP: 0
+Nie dodano Test Folder: [TF376] LADMAR GDM US: 0
+Nie dodano Test Folder: [TF387] Puerto Rico: 0

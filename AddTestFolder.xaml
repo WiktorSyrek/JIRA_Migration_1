@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>663,3530</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>931,3209</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AddTestFolder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -69,13 +69,16 @@
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddTestFolder" sap:VirtualizedContainerService.HintSize="623,3410" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddTestFolder" sap:VirtualizedContainerService.HintSize="891,3129" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtTestFolders" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="PSFr_JIRA_API_AddTestFolder" sap:VirtualizedContainerService.HintSize="585,3318" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="PSFr_JIRA_API_AddTestFolder" sap:VirtualizedContainerService.HintSize="853,3037" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="httpResult" />
         <Variable x:TypeArguments="x:Int32" Name="httpStatusCode" />
@@ -86,9 +89,9 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;access: &quot; + in_sAccessKey + &quot;| secret: &quot; + in_sSecretKey + &quot;| acc: &quot; + in_sAccountId + &quot;| meth: &quot; + in_sMethod + &quot;| base: &quot; + in_sBaseUrl]" />
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="547,149" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="{}{&#xA;'name':'Folder01',&#xA;'description':'',&#xA;'cycleId':'0001513838430954-242ac112-0001',&#xA;'versionId':12829,&#xA; 'projectId':10930&#xA;}" />
-      <Assign sap:VirtualizedContainerService.HintSize="547,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="815,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;access: &quot; + in_sAccessKey + &quot;| secret: &quot; + in_sSecretKey + &quot;| acc: &quot; + in_sAccountId + &quot;| meth: &quot; + in_sMethod + &quot;| base: &quot; + in_sBaseUrl]" />
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="815,149" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="{}{&#xA;'name':'Folder01',&#xA;'description':'',&#xA;'cycleId':'0001513838430954-242ac112-0001',&#xA;'versionId':12829,&#xA; 'projectId':10930&#xA;}" />
+      <Assign sap:VirtualizedContainerService.HintSize="815,60" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="njl:JToken">[requestJSON("name")]</OutArgument>
         </Assign.To>
@@ -96,7 +99,7 @@
           <InArgument x:TypeArguments="njl:JToken">[in_sName]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="547,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign sap:VirtualizedContainerService.HintSize="815,60" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="njl:JToken">[requestJSON("projectId")]</OutArgument>
         </Assign.To>
@@ -104,7 +107,7 @@
           <InArgument x:TypeArguments="njl:JToken">[Integer.Parse(in_sProjectId)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="547,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap:VirtualizedContainerService.HintSize="815,60" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="njl:JToken">[requestJSON("versionId")]</OutArgument>
         </Assign.To>
@@ -112,7 +115,7 @@
           <InArgument x:TypeArguments="njl:JToken">[Integer.Parse(in_sVersionId)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="547,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign sap:VirtualizedContainerService.HintSize="815,60" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="njl:JToken">[requestJSON("cycleId")]</OutArgument>
         </Assign.To>
@@ -120,8 +123,8 @@
           <InArgument x:TypeArguments="njl:JToken">[in_sTestCycleId]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[requestJSON.ToString]" />
-      <Sequence sap:VirtualizedContainerService.HintSize="547,2375" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="815,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[requestJSON.ToString]" />
+      <Sequence sap:VirtualizedContainerService.HintSize="815,2094" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="qhash" />
           <Variable x:TypeArguments="x:String" Name="queryString" />
@@ -134,7 +137,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="509,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_5">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[relativePath]</OutArgument>
           </Assign.To>
@@ -142,7 +145,7 @@
             <InArgument x:TypeArguments="x:String">folder</InArgument>
           </Assign.Value>
         </Assign>
-        <Assign sap:VirtualizedContainerService.HintSize="509,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_6">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[queryString]</OutArgument>
           </Assign.To>
@@ -152,7 +155,7 @@
             </InArgument>
           </Assign.Value>
         </Assign>
-        <Assign sap:VirtualizedContainerService.HintSize="509,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_7">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[qhash]</OutArgument>
           </Assign.To>
@@ -162,9 +165,9 @@
             </InArgument>
           </Assign.Value>
         </Assign>
-        <z:GenerateJWTToken DisplayName="Generate JWT token" sap:VirtualizedContainerService.HintSize="509,22" sap2010:WorkflowViewState.IdRef="GenerateJWTToken_1" in_sAccessKey="[in_sAccessKey]" in_sAccountId="[in_sAccountId]" in_sBaseUrl="[in_sBaseUrl]" in_sMethod="[in_sMethod]" in_sQhash="[qhash]" in_sQueryString="[queryString]" in_sRelativePath="[relativePath]" in_sSecretKey="[in_sSecretKey]" out_sJWTToken="[jwtToken]" />
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="509,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[jwtToken]" />
-        <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/folder" sap:VirtualizedContainerService.HintSize="509,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
+        <z:GenerateJWTToken DisplayName="Generate JWT token" sap:VirtualizedContainerService.HintSize="777,22" sap2010:WorkflowViewState.IdRef="GenerateJWTToken_1" in_sAccessKey="[in_sAccessKey]" in_sAccountId="[in_sAccountId]" in_sBaseUrl="[in_sBaseUrl]" in_sMethod="[in_sMethod]" in_sQhash="[qhash]" in_sQueryString="[queryString]" in_sRelativePath="[relativePath]" in_sSecretKey="[in_sSecretKey]" out_sJWTToken="[jwtToken]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="777,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[jwtToken]" />
+        <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/folder" sap:VirtualizedContainerService.HintSize="777,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
           <ui:HttpClient.Attachments>
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.Attachments>
@@ -183,8 +186,8 @@
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.UrlSegments>
         </ui:HttpClient>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="509,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; +  httpResult.ToString]" />
-        <Assign sap:VirtualizedContainerService.HintSize="509,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="777,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; +  httpResult.ToString]" />
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_8">
           <Assign.To>
             <OutArgument x:TypeArguments="s:String[]">[resultArray]</OutArgument>
           </Assign.To>
@@ -192,7 +195,7 @@
             <InArgument x:TypeArguments="s:String[]">[httpResult.Split(" "c)]</InArgument>
           </Assign.Value>
         </Assign>
-        <Assign sap:VirtualizedContainerService.HintSize="509,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_9">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[qhash]</OutArgument>
           </Assign.To>
@@ -200,8 +203,8 @@
             <InArgument x:TypeArguments="x:String">[resultArray(6).ToString.Replace("'","")]</InArgument>
           </Assign.Value>
         </Assign>
-        <z:GenerateJWTToken DisplayName="Generate JWT token" sap:VirtualizedContainerService.HintSize="509,22" sap2010:WorkflowViewState.IdRef="GenerateJWTToken_2" in_sAccessKey="[in_sAccessKey]" in_sAccountId="[in_sAccountId]" in_sBaseUrl="[in_sBaseUrl]" in_sMethod="[in_sMethod]" in_sQhash="[qhash]" in_sQueryString="[queryString]" in_sRelativePath="[relativePath]" in_sSecretKey="[in_sSecretKey]" out_sJWTToken="[jwtToken]" />
-        <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/folder" sap:VirtualizedContainerService.HintSize="509,22" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
+        <z:GenerateJWTToken DisplayName="Generate JWT token" sap:VirtualizedContainerService.HintSize="777,22" sap2010:WorkflowViewState.IdRef="GenerateJWTToken_2" in_sAccessKey="[in_sAccessKey]" in_sAccountId="[in_sAccountId]" in_sBaseUrl="[in_sBaseUrl]" in_sMethod="[in_sMethod]" in_sQhash="[qhash]" in_sQueryString="[queryString]" in_sRelativePath="[relativePath]" in_sSecretKey="[in_sSecretKey]" out_sJWTToken="[jwtToken]" />
+        <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/folder" sap:VirtualizedContainerService.HintSize="777,22" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
           <ui:HttpClient.Attachments>
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.Attachments>
@@ -220,7 +223,7 @@
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.UrlSegments>
         </ui:HttpClient>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="509,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; + httpResult]">
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="777,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; + httpResult]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,66 +231,66 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:LogMessage>
-        <If Condition="[httpStatusCode &lt;&gt; 201]" sap:VirtualizedContainerService.HintSize="509,389" sap2010:WorkflowViewState.IdRef="If_1">
+        <ui:BuildDataTable DataTable="[dtTestFolders]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="777,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Id&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+        <If Condition="[httpStatusCode &lt;&gt; 200]" sap:VirtualizedContainerService.HintSize="777,662" sap2010:WorkflowViewState.IdRef="If_1">
           <If.Then>
-            <Sequence sap:VirtualizedContainerService.HintSize="368,241" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap:VirtualizedContainerService.HintSize="368,179" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:AppendLine DisplayName="Append Line" FileName="TestFolder_Add.txt" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Nie dodano Test Folder: &quot; + in_sName + &quot;: &quot; + httpStatusCode.ToString]" />
-              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="[&quot;Nie dodano Test Folder: &quot; + in_sName]" />
             </Sequence>
           </If.Then>
+          <If.Else>
+            <Sequence DisplayName="save cycle id" sap:VirtualizedContainerService.HintSize="368,514" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="njl:JObject" Name="jsonIssues" />
+                <Variable x:TypeArguments="sd:DataRow" Name="drTestFolder" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonIssues]" JsonString="[httpResult]" />
+              <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataRow">[drTestFolder]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataRow">[dtTestFolders.NewRow()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Object">[drTestFolder(0)]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Object">[jsonIssues("id")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Object">[drTestFolder(1)]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Object">[jsonIssues("name")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[drTestFolder]" DataTable="[dtTestFolders]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            </Sequence>
+          </If.Else>
         </If>
-        <Sequence DisplayName="save cycle id" sap:VirtualizedContainerService.HintSize="509,713" sap2010:WorkflowViewState.IdRef="Sequence_4">
-          <Sequence.Variables>
-            <Variable x:TypeArguments="njl:JObject" Name="jsonIssues" />
-            <Variable x:TypeArguments="sd:DataTable" Name="dtTestFolders" />
-            <Variable x:TypeArguments="sd:DataRow" Name="drTestFolder" />
-          </Sequence.Variables>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonIssues]" JsonString="[httpResult]" />
-          <ui:BuildDataTable DataTable="[dtTestFolders]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Id&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-          <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_10">
-            <Assign.To>
-              <OutArgument x:TypeArguments="sd:DataRow">[drTestFolder]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="sd:DataRow">[dtTestFolders.NewRow()]</InArgument>
-            </Assign.Value>
-          </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_11">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:Object">[drTestFolder(0)]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:Object">[jsonIssues("id")]</InArgument>
-            </Assign.Value>
-          </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:Object">[drTestFolder(1)]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:Object">[jsonIssues("name")]</InArgument>
-            </Assign.Value>
-          </Assign>
-          <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[drTestFolder]" DataTable="[dtTestFolders]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-          <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_13">
-            <Assign.To>
-              <OutArgument x:TypeArguments="sd:DataTable">[dtResults]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="sd:DataTable">[dtTestFolders]</InArgument>
-            </Assign.Value>
-          </Assign>
-        </Sequence>
+        <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[dtResults]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[dtTestFolders]</InArgument>
+          </Assign.Value>
+        </Assign>
       </Sequence>
     </Sequence>
   </Sequence>
