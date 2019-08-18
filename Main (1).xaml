@@ -104,18 +104,26 @@
                   <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                 </ActivityAction.Argument>
                 <Sequence DisplayName="Body" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                  <ui:ForEach x:TypeArguments="sr:PropertyInfo" DisplayName="For each" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[item.GetType.GetProperties]">
-                    <ui:ForEach.Body>
-                      <ActivityAction x:TypeArguments="sr:PropertyInfo">
-                        <ActivityAction.Argument>
-                          <DelegateInArgument x:TypeArguments="sr:PropertyInfo" Name="item1" />
-                        </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[item1.GetValue(item).ToString]" TopMost="True" />
-                        </Sequence>
-                      </ActivityAction>
-                    </ui:ForEach.Body>
-                  </ui:ForEach>
+                  <ui:CommentOut DisplayName="Comment out" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <ui:ForEach x:TypeArguments="sr:PropertyInfo" DisplayName="For each" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[item.GetType.GetProperty(&quot;&quot;).]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="sr:PropertyInfo">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sr:PropertyInfo" Name="item1" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[item1.GetValue()]" TopMost="True" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap2010:WorkflowViewState.IdRef="MessageBox_16" Text="[&quot;Index=&gt;&quot;+item.GetType.GetProperty(&quot;index&quot;).GetValue(item).ToString]" TopMost="True" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" Text="[&quot;value=&gt;&quot;+item.GetType.GetProperty(&quot;value&quot;).GetValue(item).ToString]" TopMost="True" sap2010:WorkflowViewState.IdRef="MessageBox_17" />
                 </Sequence>
               </ActivityAction>
             </ui:ForEach.Body>
@@ -124,16 +132,16 @@
       </FlowStep>
     </Flowchart.StartNode>
     <x:Reference>__ReferenceID0</x:Reference>
-    <sads:DebugSymbol.Symbol>dxdEOlxhbG9rXGV4Y2VsXE1haW4ueGFtbB1HA4ABDwIBAVEJexQCAQJTRFNiAgEDVwtXrwECASRYC1iwAQIBIFkLWa8BAgEcWgtarwECARhbC1uvAQIBFFwLYxQCARBkC3oYAgEEV0JXSgIBJlemAVesAQIBJVhCWEoCASJYpgFYrQECASFZQllKAgEeWaYBWawBAgEdWkJaSgIBGlqmAVqsAQIBGVtCW0oCARZbpgFbrAECARVhR2GnAQIBE15IXkwCARFkfmSEAQIBDmoRdxwCAQVrE3YgAgEGa44Ba6wBAgEMcRlzJAIBB3IbcuQBAgEIcrEBctIBAgEJ</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dxdEOlxhbG9rXGV4Y2VsXE1haW4ueGFtbB1HA4gBDwIBAVEJgwEUAgECU0RTYgIBA1cLV68BAgElWAtYsAECASFZC1mvAQIBHVoLWq8BAgEZWwtbrwECARVcC2MUAgERZAuCARgCAQRXQldKAgEnV6YBV6wBAgEmWEJYSgIBI1imAVitAQIBIllCWUoCAR9ZpgFZrAECAR5aQlpKAgEbWqYBWqwBAgEaW0JbSgIBF1umAVusAQIBFmFHYacBAgEUXkheTAIBEmR+ZIQBAgEPahF/HAIBBWsTfCMCAQ59E32ZAgIBCn4TfpkCAgEGfakBfYcCAgELfnl+1wECAQc=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="AddToCollection`1_1" sap:VirtualizedContainerService.HintSize="286.666666666667,22" />
-      <sap2010:ViewStateData Id="AddToCollection`1_2" sap:VirtualizedContainerService.HintSize="286.666666666667,22" />
-      <sap2010:ViewStateData Id="AddToCollection`1_3" sap:VirtualizedContainerService.HintSize="286.666666666667,22" />
-      <sap2010:ViewStateData Id="AddToCollection`1_4" sap:VirtualizedContainerService.HintSize="286.666666666667,22" />
-      <sap2010:ViewStateData Id="AddToCollection`1_5" sap:VirtualizedContainerService.HintSize="286.666666666667,22" />
-      <sap2010:ViewStateData Id="Assign_8" sap:VirtualizedContainerService.HintSize="286.666666666667,60.6666666666667" />
+      <sap2010:ViewStateData Id="AddToCollection`1_1" sap:VirtualizedContainerService.HintSize="352,22" />
+      <sap2010:ViewStateData Id="AddToCollection`1_2" sap:VirtualizedContainerService.HintSize="352,22" />
+      <sap2010:ViewStateData Id="AddToCollection`1_3" sap:VirtualizedContainerService.HintSize="352,22" />
+      <sap2010:ViewStateData Id="AddToCollection`1_4" sap:VirtualizedContainerService.HintSize="352,22" />
+      <sap2010:ViewStateData Id="AddToCollection`1_5" sap:VirtualizedContainerService.HintSize="352,22" />
+      <sap2010:ViewStateData Id="Assign_8" sap:VirtualizedContainerService.HintSize="352,60.6666666666667" />
       <sap2010:ViewStateData Id="MessageBox_15" sap:VirtualizedContainerService.HintSize="314,58.6666666666667" />
       <sap2010:ViewStateData Id="Sequence_20" sap:VirtualizedContainerService.HintSize="336,182.666666666667">
         <sap:WorkflowViewStateService.ViewState>
@@ -150,15 +158,32 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_19" sap:VirtualizedContainerService.HintSize="222,176.666666666667">
+      <sap2010:ViewStateData Id="Sequence_21" sap:VirtualizedContainerService.HintSize="374,176.666666666667">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ForEach`1_9" sap:VirtualizedContainerService.HintSize="286.666666666667,313.333333333333" />
-      <sap2010:ViewStateData Id="Sequence_15" sap:VirtualizedContainerService.HintSize="200,98">
+      <sap2010:ViewStateData Id="CommentOut_1" sap:VirtualizedContainerService.HintSize="314,52.6666666666667">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="MessageBox_16" sap:VirtualizedContainerService.HintSize="314,58.6666666666667" />
+      <sap2010:ViewStateData Id="MessageBox_17" sap:VirtualizedContainerService.HintSize="314,58.6666666666667" />
+      <sap2010:ViewStateData Id="Sequence_19" sap:VirtualizedContainerService.HintSize="336,374">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ForEach`1_9" sap:VirtualizedContainerService.HintSize="352,510.666666666667" />
+      <sap2010:ViewStateData Id="Sequence_15" sap:VirtualizedContainerService.HintSize="374,1074">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "JIRA_Migration_1",
   "description": "Migration of the data to JIRA with REST API",
   "main": "Main.xaml",
