@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AddTestToTestFolder" this:AddTestToTestFolder.in_sTests="[&quot;STOR-4989&quot;]" this:AddTestToTestFolder.in_sZapiAccessKey="NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ" this:AddTestToTestFolder.in_sAccessKey="NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ" this:AddTestToTestFolder.in_sBaseUrl="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/" this:AddTestToTestFolder.in_sMethod="post" this:AddTestToTestFolder.in_sSecretKey="Tmjsrb04fSyrP1Ow5mkKyXYQ_HHY-wiyuO9zn_VfxVQ" this:AddTestToTestFolder.in_sAccountId="557058:14fd7209-5005-4a79-8b63-a4d167f9c04a" this:AddTestToTestFolder.in_sTestFoldersPath="C:\Users\syrek.w\Documents\UiPath\JIRA_REST_API_AUTO\TestFolders.csv" this:AddTestToTestFolder.in_sTestFolderName="Test Folder 01" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:nj="clr-namespace:Newtonsoft.Json;assembly=Newtonsoft.Json" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:z="clr-namespace:ZapiCSharp;assembly=ZAPI_Token_Generator">
+<Activity mc:Ignorable="sap sap2010" x:Class="AddTestToTestFolder" this:AddTestToTestFolder.in_sTests="[new List(of String)]" this:AddTestToTestFolder.in_sZapiAccessKey="NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ" this:AddTestToTestFolder.in_sAccessKey="NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ" this:AddTestToTestFolder.in_sBaseUrl="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/" this:AddTestToTestFolder.in_sMethod="post" this:AddTestToTestFolder.in_sSecretKey="Tmjsrb04fSyrP1Ow5mkKyXYQ_HHY-wiyuO9zn_VfxVQ" this:AddTestToTestFolder.in_sAccountId="557058:14fd7209-5005-4a79-8b63-a4d167f9c04a" this:AddTestToTestFolder.in_sTestFoldersPath="C:\Users\syrek.w\Documents\UiPath\JIRA_REST_API_AUTO\TestFolders.csv" this:AddTestToTestFolder.in_sTestFolderName="Test Folder 01" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:nj="clr-namespace:Newtonsoft.Json;assembly=Newtonsoft.Json" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:z="clr-namespace:ZapiCSharp;assembly=ZAPI_Token_Generator">
   <x:Members>
-    <x:Property Name="in_sTests" Type="InArgument(njl:JToken)" />
+    <x:Property Name="in_sTests" Type="InArgument(scg:List(x:String))" />
     <x:Property Name="in_sZapiAccessKey" Type="InArgument(x:String)" />
     <x:Property Name="in_sAccessKey" Type="InArgument(x:String)" />
     <x:Property Name="in_sBaseUrl" Type="InArgument(x:String)" />
@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>855,2900</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>893,3037</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AddTestToTestFolder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -66,7 +66,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddTestToTestFolder" sap:VirtualizedContainerService.HintSize="815,2820" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddTestToTestFolder" sap:VirtualizedContainerService.HintSize="853,2917" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="folderId" />
     </Sequence.Variables>
@@ -75,7 +75,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="AddTestToTestFolder" sap:VirtualizedContainerService.HintSize="777,2728" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="AddTestToTestFolder" sap:VirtualizedContainerService.HintSize="815,2825" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="njl:JObject" Name="requestJSON" />
         <Variable x:TypeArguments="sd:DataTable" Name="dtTestCycleIds" />
@@ -84,32 +84,55 @@
         <Variable x:TypeArguments="nj:JsonConverter" Name="jsonSerializer" />
         <Variable x:TypeArguments="sd:DataTable" Name="dtTestFolders" />
         <Variable x:TypeArguments="sd:DataRow[]" Name="drTestFolder" />
+        <Variable x:TypeArguments="x:String" Name="sIssues" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="739,164" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="{}{&#xA;&#x9;'issues':['FSC-2'],&#xA;&#x9;'assigneeType':'currentUser',&#xA;&#x9;'method':1,&#xA;&#x9;'versionId':12829,&#xA;&#x9;'projectId':10930,&#xA;&#x9;'cycleId':'0001513838430954-242ac112-0001'&#xA;}" />
-      <Assign sap:VirtualizedContainerService.HintSize="739,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_19">
         <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[requestJSON("issues")(0)]</OutArgument>
+          <OutArgument x:TypeArguments="x:String">[sIssues]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">[in_sTests]</InArgument>
+          <InArgument x:TypeArguments="x:String">[string.Join(",", in_sTests)]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="739,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[requestJSON.ToString]" />
-      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[dtTestFolders]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[in_sTestFoldersPath]" sap:VirtualizedContainerService.HintSize="739,59" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
-      <Assign sap:VirtualizedContainerService.HintSize="739,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="[&quot;{&#x9;'issues':[&quot;+sIssues+&quot;],&#x9;'assigneeType':'currentUser',&#x9;'method':1,&#x9;'versionId':12829,&#x9;'projectId':10930,&#x9;'cycleId':'0001513838430954-242ac112-0001'}&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="777,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[requestJSON.ToString]" />
+      <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="777,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" MacroSetting="DisableAll" Visible="False" WorkbookPath="[in_sTestFoldersPath]">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,151" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[dtTestFolders]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+      <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_12">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataRow[]">[drTestFolder]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="sd:DataRow[]">[dtTestFolders.Select("name like '%" + in_sTestFolderName + "%'")]</InArgument>
+          <InArgument x:TypeArguments="sd:DataRow[]">[dtTestFolders.Select("name = '" + in_sTestFolderName.ToString.Replace("'","''")+ "'")]</InArgument>
         </Assign.Value>
       </Assign>
-      <If Condition="[drTestFolder.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="739,1031" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[drTestFolder.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="777,1031" sap2010:WorkflowViewState.IdRef="If_2">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="368,883" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
@@ -181,10 +204,17 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nie znaleziono Test Cycle: &quot; + in_sTestFolderName]" />
+          <Sequence sap:VirtualizedContainerService.HintSize="368,183" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nie znaleziono Test Cycle: &quot; + in_sTestFolderName]" />
+          </Sequence>
         </If.Else>
       </If>
-      <Sequence sap:VirtualizedContainerService.HintSize="739,931" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap:VirtualizedContainerService.HintSize="777,931" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="httpResult" />
           <Variable x:TypeArguments="x:Int32" Name="httpStatusCode" />
