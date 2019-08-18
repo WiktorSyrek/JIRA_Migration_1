@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>294,296</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>294,256</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetAllIssues_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -64,6 +64,6 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <j:GenerateAuthKey sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="GenerateAuthKey_1" in_password="[&quot;C47xLfh38mfWuGKDJ0rC68DD&quot;]" in_username="[&quot;syrek.w@pg.com&quot;]" out_encoded="[encoded]" />
-    <j:GetAllIssues in_sProject="{x:Null}" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="GetAllIssues_2" in_sAuthorizationKey="[encoded]" in_sIssueType="[in_sIssueType]" in_sServer="[in_sServer]" />
+    <j:GetAllIssues sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="GetAllIssues_2" in_sAuthorizationKey="[encoded]" in_sIssueType="[in_sIssueType]" in_sProject="[in_sProject]" in_sServer="[in_sServer]" />
   </Sequence>
 </Activity>
