@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestFolder_Add" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1046,4338" sap2010:WorkflowViewState.IdRef="TestFolder_Add_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestFolder_Add" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="867,4378" sap2010:WorkflowViewState.IdRef="TestFolder_Add_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
@@ -46,15 +46,17 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1006,4258" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap:VirtualizedContainerService.HintSize="827,4258" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="TestFolder_Add" sap:VirtualizedContainerService.HintSize="968,4067" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="TestFolder_Add" sap:VirtualizedContainerService.HintSize="789,4067" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Object" Name="FolderName" />
         <Variable x:TypeArguments="sd:DataTable" Name="dtTestFolders" />
@@ -69,8 +71,8 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[dtTestFoldersResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="930,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;id&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;testcycleid&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;versionid&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="930,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="TestFolders1.xlsx">
+      <ui:BuildDataTable DataTable="[dtTestFoldersResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="751,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;id&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;testcycleid&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;versionid&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="751,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="G:\Shared drives\Rally2JIRA Data Migrations\B2B Migration\StoreOnline\InputData\TestSets\TestSets.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -82,7 +84,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExcelReadRange AddHeaders="True" DataTable="[dtTestFolders]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet 1">
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[dtTestFolders]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
                 <ui:ExcelReadRange.Range>
                   <InArgument x:TypeArguments="x:String">
                     <Literal x:TypeArguments="x:String" Value="" />
@@ -93,7 +95,7 @@
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
-      <Assign sap:VirtualizedContainerService.HintSize="930,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign sap:VirtualizedContainerService.HintSize="751,60" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[total]</OutArgument>
         </Assign.To>
@@ -101,7 +103,7 @@
           <InArgument x:TypeArguments="x:Int32">[dtTestFolders.Select.Count]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="930,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign sap:VirtualizedContainerService.HintSize="751,60" sap2010:WorkflowViewState.IdRef="Assign_7">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
         </Assign.To>
@@ -109,7 +111,7 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="930,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="Versions.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="751,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="Versions.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -132,7 +134,7 @@
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="930,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="TestCycle.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="751,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="TestCyclePG.2.1.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -155,13 +157,13 @@
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
-      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtTestFolders]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="930,2649" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtTestFolders]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="751,2649" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="884,2501" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="705,2501" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Object" Name="Version" />
                 <Variable x:TypeArguments="x:Object" Name="TestCycle" />
@@ -177,7 +179,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="846,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Object">[FolderName]</OutArgument>
                 </Assign.To>
@@ -185,7 +187,7 @@
                   <InArgument x:TypeArguments="x:Object">[row(4)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="846,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Object">[Version]</OutArgument>
                 </Assign.To>
@@ -201,7 +203,7 @@
                   <InArgument x:TypeArguments="x:Object">[row(2)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="846,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="sd:DataRow[]">[drVersion]</OutArgument>
                 </Assign.To>
@@ -209,7 +211,7 @@
                   <InArgument x:TypeArguments="sd:DataRow[]">[dtVersions.Select("name = '" + Version.ToString + "'")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[drVersion.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="846,389" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[drVersion.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="667,389" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                     <Assign.To>
@@ -228,7 +230,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:Break sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Break_1" />
-                    <ui:AppendLine DisplayName="Append Line" FileName="TestFolder_Add.txt" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Nie dodano TestFolder: &quot; + FolderName.ToString + &quot; NIE ZNALEZIONO WERSJI&quot;]" />
+                    <ui:AppendLine DisplayName="Append Line" FileName="TestFolder_Err.txt" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Nie dodano TestFolder: &quot; + FolderName.ToString + &quot; NIE ZNALEZIONO WERSJI&quot;]" />
                   </Sequence>
                 </If.Else>
               </If>
@@ -237,10 +239,10 @@
                   <OutArgument x:TypeArguments="sd:DataRow[]">[drTestCyle]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="sd:DataRow[]">[dtTestCycles.Select("name = '" + TestCycle.ToString + "' and version = '" + Version.ToString + "'")]</InArgument>
+                  <InArgument x:TypeArguments="sd:DataRow[]">[dtTestCycles.Select("name = '" + TestCycle.ToString + "' and version = '" + VersionId + "'")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[drTestCyle.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="846,389" sap2010:WorkflowViewState.IdRef="If_2">
+              <If Condition="[drTestCyle.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="667,389" sap2010:WorkflowViewState.IdRef="If_2">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                     <Assign.To>
@@ -258,35 +260,35 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Break sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Break_2" />
-                    <ui:AppendLine DisplayName="Append Line" FileName="TestFolder_Add.txt" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[&quot;Nie dodano TestFolder: &quot; + FolderName.ToString + &quot; NIE ZNALEZIONO CYCLE&quot;]" />
+                    <ui:AppendLine DisplayName="Append Line" FileName="TestFolder_Err2.txt" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[&quot;Nie dodano TestFolder: &quot; + FolderName.ToString + &quot; NIE ZNALEZIONO CYCLE&quot;]" />
+                    <ui:Continue sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="846,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AddTestFolder.xaml">
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="667,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="AddTestFolder.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sName">[FolderName.ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_sProjectId">10000</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_sProjectId">10331</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sVersionId">[VersionId]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sTestCycleId">[TestCycleId]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_sZapiAccessKey">NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_sAccessKey">NjYxY2Q2OGEtNzVmYS0zNWE3LWFlOTktNTg3MGVkNDBiN2ExIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_sZapiAccessKey">NzM2YjQyOWItOGRjYi0zNjVkLWJlMzYtODM4MjE2YTQ1ODBmIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_sAccessKey">NzM2YjQyOWItOGRjYi0zNjVkLWJlMzYtODM4MjE2YTQ1ODBmIDU1NzA1OCUzQTE0ZmQ3MjA5LTUwMDUtNGE3OS04YjYzLWE0ZDE2N2Y5YzA0YSBVU0VSX0RFRkFVTFRfTkFNRQ</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sBaseUrl">https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sMethod">post</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_sSecretKey">Tmjsrb04fSyrP1Ow5mkKyXYQ_HHY-wiyuO9zn_VfxVQ</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_sSecretKey">DSf7spcGD5VKxFceqOUkPKaE3GDkPqoMmMU2azeHtUA</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_sAccountId">557058:14fd7209-5005-4a79-8b63-a4d167f9c04a</InArgument>
                   <OutArgument x:TypeArguments="sd:DataTable" x:Key="dtResults">[dtResulst]</OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <If Condition="[dtResulst.Select.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="846,762" sap2010:WorkflowViewState.IdRef="If_3">
+              <If Condition="[dtResulst.Select.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="667,762" sap2010:WorkflowViewState.IdRef="If_3">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="705,614" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence sap:VirtualizedContainerService.HintSize="296,614" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                    <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataRow">[drTFResult]</OutArgument>
                       </Assign.To>
@@ -294,7 +296,7 @@
                         <InArgument x:TypeArguments="sd:DataRow">[dtTestFoldersResult.NewRow]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                    <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[drTFResult(0)]</OutArgument>
                       </Assign.To>
@@ -302,7 +304,7 @@
                         <InArgument x:TypeArguments="x:Object">[dtResulst.Select()(0)(0).ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                    <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_18">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[drTFResult(1)]</OutArgument>
                       </Assign.To>
@@ -310,7 +312,7 @@
                         <InArgument x:TypeArguments="x:Object">[FolderName.ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                    <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_19">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[drTFResult(2)]</OutArgument>
                       </Assign.To>
@@ -318,7 +320,7 @@
                         <InArgument x:TypeArguments="x:Object">[TestCycleId]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                    <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_20">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[drTFResult(3)]</OutArgument>
                       </Assign.To>
@@ -326,11 +328,11 @@
                         <InArgument x:TypeArguments="x:Object">[VersionId]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[drTFResult]" DataTable="[dtTestFoldersResult]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="667,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                    <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[drTFResult]" DataTable="[dtTestFoldersResult]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="258,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                   </Sequence>
                 </If.Then>
               </If>
-              <Assign sap:VirtualizedContainerService.HintSize="846,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign sap:VirtualizedContainerService.HintSize="667,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                 </Assign.To>
@@ -338,13 +340,13 @@
                   <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
                 </Assign.Value>
               </Assign>
-              <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="846,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="[&quot;Processing TestFolders: &quot; + ((counter/total) * 100).ToString + &quot;%&quot;]" WarnLvl="False" />
+              <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="667,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="[&quot;Processing TestFolders: &quot; + ((counter/total) * 100).ToString + &quot;%&quot;]" WarnLvl="False" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[dtTestFoldersResult]" Delimitator="Comma" DisplayName="Write CSV" FilePath="TestFolders.csv" sap:VirtualizedContainerService.HintSize="930,87" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+      <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[dtTestFoldersResult]" Delimitator="Comma" DisplayName="Write CSV" FilePath="TestFoldersPG2.1.csv" sap:VirtualizedContainerService.HintSize="751,87" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
     </Sequence>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="968,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Test folder COMPLETE&quot;]" TopMost="True" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="789,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Test folder COMPLETE&quot;]" TopMost="True" />
   </Sequence>
 </Activity>

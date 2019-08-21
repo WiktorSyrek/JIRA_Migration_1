@@ -28,7 +28,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -49,6 +49,8 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Versions_Add" sap:VirtualizedContainerService.HintSize="671,1107" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -115,7 +117,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <j:AddVersion sap:VirtualizedContainerService.HintSize="258,22" sap2010:WorkflowViewState.IdRef="AddVersion_1" in_sAuthorizationKey="c3lyZWsud0BwZy5jb206QzQ3eExmaDM4bWZXdUdLREowckM2OERE" in_sName="[row(3).ToString]" in_sProjectId="[&quot;10000&quot;]" in_sServer="wiksyr1.atlassian.net" />
+                      <j:AddVersion dtResults="{x:Null}" sap:VirtualizedContainerService.HintSize="258,22" sap2010:WorkflowViewState.IdRef="AddVersion_1" in_sAuthorizationKey="d2lrdG9yLnN5cmVrQGRpcmVjdHBsLmNvbTpHRTk0cTh0ZXg3cWFqeWlpQzRMc0E5MUI=" in_sName="[row(3).ToString]" in_sProjectId="[&quot;10331&quot;]" in_sServer="jira-pg.atlassian.net" />
                       <Assign sap:VirtualizedContainerService.HintSize="258,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Double">[counter]</OutArgument>

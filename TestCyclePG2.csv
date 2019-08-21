@@ -1,0 +1,65 @@
+﻿id,name,Version
+ece5ea1d-5575-4122-8160-2d129c6d1bae,[Store Online LA] No Iteration,-1
+a5e7c7e2-cfbc-4a40-a5da-d69d10721bb6,[Store Online LA] [Magento 2.0] UAT,-1
+8e8a92b6-7ddd-4a59-8b2c-b3d3fafef045,[Store Online LA] [LA Store Online] Argentina UAT,-1
+a2a1b1ed-d91c-4b2c-af78-c7fc503bce30,[Store Online PGC] Sprint 1 - S01,-1
+d3690d73-8101-478c-8999-06c432cfe485,[Store Online PGC] SIT (Core),-1
+8e37082d-c3d6-43e3-b503-1ddea5180c2f,[Store Online LA] [Magento 2.1] Colombia & Peru & Chile SIT,-1
+70efb44c-e2de-40ee-ada1-da492aa402fe,[Store Online PGC] SIT (MVP),-1
+0cec6fbc-a41c-4a9b-abe5-8880e3075de7,"[Store Online LA] [Magento 2.1] Peru, Chile, MX, AR UAT",-1
+af39b680-db91-4051-9a74-162f51eca276,[Store Online PGC] No Iteration,-1
+0b8607d0-0c96-4a4b-93a2-68211c176d8c,[Store Online NA Retail] SIT  GRISC,-1
+0c4441cf-1b18-4d5e-8302-b1a29dca10b5,[Store Online Europe] Greece SIT,-1
+46d5aae4-e1b9-4563-b321-b6d731f13ca5,[Store Online Europe] Greece (Retail & Pharma) UAT,-1
+791fe959-05cc-4f7e-b086-d4b31e5bc547,[Store Online NA Retail] GRISC UAT,-1
+edb255a5-0a93-488a-a37d-cf2ea11afb5b,[Store Online Europe] No Iteration,-1
+b34159a7-39f4-4cbd-b6f5-14328f944dff,[Store Online NA Retail] No Iteration,-1
+d4474a22-c180-4985-b912-c3c38ee241ee,[Store Online Europe] Greece Pharma Tablet UAT,-1
+c6286bf8-cbaf-4b7b-88ad-54637aaf3b39,[Store Online] No Iteration,-1
+2dfd45be-9139-4b04-a024-04fbed251620,[Store Online] Release 2.2 - UAT,-1
+7aa395c6-c0e4-4f72-a982-079a932b4fca,"[Store Online] Release 2.2 - Sprint 9,10,11 (SIT)",-1
+c1db71b4-e5fe-4943-bc36-a032c396ca6d,[Store Online] Release 2.3 - SIT,-1
+11c20f8b-ab7d-459e-a4e4-83f6a402a2c7,[Store Online] Release 2.3 UAT,-1
+c841e380-5374-473b-b067-6094d93525c2,[Store Online] Release 2.4 - Master Data Validation,-1
+b8ab914b-6f49-4789-91e2-a5134fcfd553,[Store Online] Release 2.4 - UAT,-1
+9f408aed-e76d-4c8d-a196-987d58a342f0,[Store Online] Release 2.4 - SIT,-1
+5039706c-fe78-480f-be7d-da60ce515367,[Store Online] [SIT] LADMAR Ecuador & Guatemala & Costa Rica,-1
+605332f9-fb32-4db7-a14c-b9647455c739,[Store Online] [Sanity] LADMAR Multi Country & GDM & GDM US,-1
+529b657e-bf31-42f9-9d09-18ea8ccd28cc,[Store Online] [SIT] LADMAR & GDM & GDM US,-1
+a621d237-0a1a-4876-be0d-46e411009ab1,[Store Online] Release 2.5 Master Data Validation,-1
+52173a61-2560-4802-809e-d7e0a858046c,[Store Online] [NNiT] Sanity check for NA & EU,-1
+af021ee3-c9f2-490f-9551-7d111a93a387,[Store Online] [UAT] LADMAR & GDM & GDM US,-1
+6032905b-654e-4d8a-8482-f55f4eda0036,[Store Online] [SIT] Release 2.5,-1
+61b2e669-77e9-44ce-9c10-7be652ad4fde,[Store Online] [UAT] Release 2.5,-1
+417b7991-50d3-4ff9-aeaf-890c35b35234,[Store Online] [SIT] Release 2.6,-1
+cbff8b0d-3f2b-486f-a145-6f673f35a4bd,[Store Online] Release 2.6 Master Data Validation,-1
+75aa9d6b-b69c-4d71-b1e0-0d257e1a9c79,[Store Online] [UAT] Release 2.6,-1
+d1e74a90-59fa-4570-b6d9-44b23ef99ab6,[Store Online] [SIT] Release 2.7,-1
+fe1add51-b845-4e15-b41d-2d4c67c862ed,[Store Online] [MD Validation] Release 2.7,-1
+7e722c62-d8c9-4ad7-8b28-e0b8adc2a4b2,[Store Online] [MD SIT] Release 2.7,-1
+dd52acd3-34e4-43b3-8d21-039c90f3fa35,[Store Online] [UAT] Release 2.7,-1
+ea065c95-06cf-4707-9db5-4f84524f554c,[Store Online] [SIT] RDD tracking 2.7,-1
+7ff8d0cf-c59a-4028-9bc2-6da427195e82,[Store Online] [SIT] Release 2.8,-1
+821b83c5-4be6-47f0-a0b8-ec286b31f8c2,[Store Online] [MD Validation] Release 2.8,-1
+822f75fd-373a-40b0-be5e-3d252dee5cf9,[Store Online] [MD SIT] Release 2.8,-1
+2c229ee4-c35c-47e1-a6c0-5f89847cb35e,[Store Online] [UAT] Release 2.8,-1
+e0ebe2c8-2739-491c-9a34-07c8a40ee7d6,[Store Online] [SIT] Release 2.9,-1
+3d8866ac-edc7-4b4a-92a9-73dd9919656d,[Store Online] [MD SIT] Release 2.9,-1
+02b9d30c-862d-4cfd-8ba4-fabdc4a49e37,[Store Online] [UAT] Release 2.9,-1
+72187d2a-16a4-46f7-8386-aac2d12dd5e4,[Store Online] [SIT] Release 2.10,-1
+311c6270-c6ba-4ce4-a851-d264d4286476,[Store Online] [MD Validation] Release 2.10,-1
+621fd1c1-65e3-4d04-a0dc-8227ab64c1fa,[Store Online] [MD SIT] Release 2.10,-1
+290f8fa2-8ebe-4b16-800f-98bad2614b44,[Store Online] API GEE Migration,-1
+6c8e0192-e9b0-4e86-9781-77cd265a3dcc,[Store Online] 2.8.X API GEE,-1
+db88609c-c709-4c53-9227-534952179de4,[Store Online] 2.9.1 API GEE,-1
+6d7c3011-4ce2-4862-82dd-ea5c3e1d546d,[Store Online] 2.10 API GEE,-1
+96c08edd-5866-4085-8889-397f87c6c50c,[Store Online] 2.9.1 API GEE GO LIVE,-1
+e1c728c8-7a49-49ad-9332-8f6bcae8d87f,[Store Online] 2.11 API GEE,-1
+582185db-0936-4b1c-aebc-af82f20d7fdc,[Store Online] API GEE [DC Testing],-1
+82aa229d-0b4f-469e-9896-e95ec9c9154b,[Store Online] [UAT] Release 2.10,-1
+d238c659-5147-4807-936a-f7991de7dfa6,[Store Online] [SIT] Release 2.11,-1
+418f1127-e52d-4cd3-96f9-a9c419ce3a93,[Store Online] [MD SIT] Release 2.11,-1
+b8c8440c-1ad7-442b-b618-da49338c3033,[Store Online] [DV SIT] Release 2.11,-1
+379c074a-5950-4a20-8540-50425e89c4e4,[Store Online] [SIT] Release 2.12 [NA],-1
+c031d0f6-9895-427d-9e0d-613e3879f356,[Store Online] [UAT] Release 2.11,-1
+502946fa-ab3e-49a5-8d1a-3a7b7cddd50a,[Store Online] [SIT] Release 2.12 [IT + Global],-1

@@ -48,3 +48,244 @@ Nie dodano Test Folder: [TF352] DACH DE PGP: 0
 Nie dodano Test Folder: [TF364] US PGP: 0
 Nie dodano Test Folder: [TF376] LADMAR GDM US: 0
 Nie dodano Test Folder: [TF387] Puerto Rico: 0
+Nie dodano Test Folder: [TF4] General: 0
+Nie dodano Test Folder: [TF16] Ordering - Master Data - Product: 0
+Nie dodano Test Folder: [TF29] Frontend: 0
+Nie dodano Test Folder: [TF43] Core SIT: 0
+Nie dodano Test Folder: [TF54] WOM exit Greece BLP prep: 0
+Nie dodano Test Folder: [TF55] Greece UAT: 0
+Nie dodano Test Folder: [TF66] Release 2.2 SIT: 0
+Nie dodano Test Folder: [TF67] LADMAR UAT: 0
+Nie dodano Test Folder: [TF78] Frontend: 0
+Nie dodano Test Folder: [TF88] Order History: 0
+Nie dodano Test Folder: [TF89] Order status: 0
+Nie dodano Test Folder: [TF98] User Management V: 0
+Nie dodano Test Folder: [TF99] Webservices configuration: 0
+Nie dodano Test Folder: [TF111] RELEASE 2.6: 0
+Nie dodano Test Folder: [TF123] DevOps check: 0
+Nie dodano Test Folder: [TF133] US Retail: 0
+Nie dodano Test Folder: [TF144] GR: 0
+Nie dodano Test Folder: [TF153] UK/UK_PGP   TC Temporary Folder: 0
+Nie dodano Test Folder: [TF154] [UAT 2.7] New Functionalities: 0
+Nie dodano Test Folder: [TF163] AT Non-Food: 0
+Nie dodano Test Folder: [TF173] US PGP: 0
+Nie dodano Test Folder: [TF184] DE Non-Food: 0
+Nie dodano Test Folder: [TF200] [SIT 2.9] New Functionalities: 0
+Nie dodano Test Folder: [TF211] Greece: 0
+Nie dodano Test Folder: [TF222] Chile: 0
+Nie dodano Test Folder: [TF223] Colombia: 0
+Nie dodano Test Folder: [TF233] PGC: 0
+Nie dodano Test Folder: [TF243] Greece Pharma: 0
+Nie dodano Test Folder: [TF244] Greece Pharma Mobile: 0
+Nie dodano Test Folder: [TF255] Mexico: 0
+Nie dodano Test Folder: [TF266] [SIT 2.9] Regression: 0
+Nie dodano Test Folder: [TF268] RELEASE 2.10: 0
+Nie dodano Test Folder: [TF277] DACH CH Food: 0
+Nie dodano Test Folder: [TF287] Canada PGP: 0
+Nie dodano Test Folder: [TF297] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TF306] DACH DE PGP: 0
+Nie dodano Test Folder: [TF315] Canada: 0
+Nie dodano Test Folder: [TF324] Peru: 0
+Nie dodano Test Folder: [TF334] API GEE Migration TC's: 0
+Nie dodano Test Folder: [TF343] API GEE [DC Testing]: 0
+Nie dodano Test Folder: [TF344] [UAT 2.10] New Functionalities: 0
+Nie dodano Test Folder: [TF352] DACH DE PGP: 0
+Nie dodano Test Folder: [TF361] Canada: 0
+Nie dodano Test Folder: [TF362] Canada PGP: 0
+Nie dodano Test Folder: [TF370] Peru: 0
+Nie dodano Test Folder: [TF371] Guatemala: 0
+Nie dodano Test Folder: [TF378] PGC NA: 0
+Nie dodano Test Folder: [TF386] US PGP: 0
+Nie dodano Test Folder: [TF387] Puerto Rico: 0
+Nie dodano Test Folder: [TS2] ------ Mexico --- DELIVERY TEAM --- ordering scenarios --- July 11-15: 400
+Nie dodano Test Folder: [TS9] Mexico --- BUSINESS TEAM --- visibility scenarios --- July 18-20: 400
+Nie dodano Test Folder: [TS10] Mexico --- BUSINESS TEAM --- general scenarios --- July 18-20: 400
+Nie dodano Test Folder: [TS11] Brasil --- Security roles test for iSara LA (out of scope): 400
+Nie dodano Test Folder: [TS12] Mexico --- BUSINESS TEAM --- ordering scenarios --- july 18-20: 400
+Nie dodano Test Folder: [TS13] ------ Mexico --- DELIVERY TEAM --- visibility scenarios --- July 14-15: 400
+Nie dodano Test Folder: [TS14] ------ Mexico --- DELIVERY TEAM --- general scenarios --- July 11-15: 400
+Nie dodano Test Folder: [TS15] ------ Brasil --- DELIVERY TEAM --- general scenarios --- prior to July 11: 400
+Nie dodano Test Folder: [TS16] ------ Brasil --- DELIVERY TEAM --- ordering scenarios --- prior to July 11: 400
+Nie dodano Test Folder: [TS17] ------ Brasil --- DELIVERY TEAM --- visibility scenarios --- July 14-15: 400
+Nie dodano Test Folder: [TS18] Brasil --- BUSINESS TEAM --- general scenarios --- July 11-15: 400
+Nie dodano Test Folder: [TS19] Brasil --- BUSINESS TEAM --- ordering scenarios --- july 11-15: 400
+Nie dodano Test Folder: [TS20] Brasil --- BUSINESS TEAM --- visibility scenarios --- July 18-20: 400
+Nie dodano Test Folder: [TS21] [Magento 2.0] UAT - Mexico - Latisnere Adrian: 400
+Nie dodano Test Folder: [TF12] Ordering - P&G Admin + Admin Account (System Admin): 0
+Nie dodano Test Folder: [TF25] Moved out of SIT, CONSOLIDATED versions of these exist in SIT folder.: 0
+Nie dodano Test Folder: [TF41] SIT 2.1: 0
+Nie dodano Test Folder: [TF53] Customer Online: 0
+Nie dodano Test Folder: [TF66] Release 2.2 SIT: 0
+Nie dodano Test Folder: [TF67] LADMAR UAT: 0
+Nie dodano Test Folder: [TF77] Archive: 0
+Nie dodano Test Folder: [TF89] Order status: 0
+Nie dodano Test Folder: [TF100] Design Validation - PM & AM: 0
+Nie dodano Test Folder: [TF113] [UAT 2.5] Puerto Rico: 0
+Nie dodano Test Folder: [TF125] [UAT 2.6] Regression: 0
+Nie dodano Test Folder: [TF135] CA PGP: 0
+Nie dodano Test Folder: [TF147] [SIT 2.7] Regression: 0
+Nie dodano Test Folder: [TF158] Argentina: 0
+Nie dodano Test Folder: [TF168] CA PGP: 0
+Nie dodano Test Folder: [TF169] PR: 0
+Nie dodano Test Folder: [TF179] US HOSP: 0
+Nie dodano Test Folder: [TF192] RELEASE 2.8: 0
+Nie dodano Test Folder: [TF193] [SIT 2.8] New Functionalities: 0
+Nie dodano Test Folder: [TF205] DACH DE PGP: 0
+Nie dodano Test Folder: [TF218] Puerto Rico: 0
+Nie dodano Test Folder: [TF227] Costa Rica: 0
+Nie dodano Test Folder: [TF228] Ecuador: 0
+Nie dodano Test Folder: [TF238] DACH CH Food: 0
+Nie dodano Test Folder: [TF251] US: 0
+Nie dodano Test Folder: [TF260] LADMAR GDM: 0
+Nie dodano Test Folder: [TF272] [UAT 2.9] Regression: 0
+Nie dodano Test Folder: [TF273] DACH DE Food: 0
+Nie dodano Test Folder: [TF282] Greece Pharma: 0
+Nie dodano Test Folder: [TF292] Brazil: 0
+Nie dodano Test Folder: [TF301] LADMAR GDM US: 0
+Nie dodano Test Folder: [TF302] Guatemala: 0
+Nie dodano Test Folder: [TF311] DACH AT Food: 0
+Nie dodano Test Folder: [TF320] Argentina: 0
+Nie dodano Test Folder: [TF321] Chile: 0
+Nie dodano Test Folder: [TF330] Guatemala: 0
+Nie dodano Test Folder: [TF331] PGC: 0
+Nie dodano Test Folder: [TF340] 2.11 API GEE: 0
+Nie dodano Test Folder: [TF349] PGC Global: 0
+Nie dodano Test Folder: [TF350] DACH DE Food: 0
+Nie dodano Test Folder: [TF358] Greece: 0
+Nie dodano Test Folder: [TF359] UK: 0
+Nie dodano Test Folder: [TF368] Chile: 0
+Nie dodano Test Folder: [TF369] Colombia: 0
+Nie dodano Test Folder: [TF377] Brazil: 0
+Nie dodano Test Folder: [TF378] PGC NA: 0
+Nie dodano Test Folder: [TF387] Puerto Rico: 0
+Nie dodano Test Folder: [TF388] Canada PGP: 0
+Nie dodano Test Folder: [TS11] Brasil --- Security roles test for iSara LA (out of scope): 0
+Nie dodano Test Folder: [TS12] Mexico --- BUSINESS TEAM --- ordering scenarios --- july 18-20: 0
+Nie dodano Test Folder: [TS22] [Magento 2.0] UAT - Mexico: 0
+Nie dodano Test Folder: [TS34] Argentina - Wojciech Tabaka: 0
+Nie dodano Test Folder: [TS45] Chile UAT: 0
+Nie dodano Test Folder: [TS46] Peru UAT: 0
+Nie dodano Test Folder: [TS55] GRISC SIT: 0
+Nie dodano Test Folder: [TS67] GRISC DV SIT: 0
+Nie dodano Test Folder: [TS79] [Europe] Greece Pharma: 0
+Nie dodano Test Folder: [TS89] [LA] Argentina: 0
+Nie dodano Test Folder: [TS90] PGC: 0
+Nie dodano Test Folder: [TS105] [LA] LADMAR - Uruguay / Paraguay: 0
+Nie dodano Test Folder: [TS118] LA - Peru: 0
+Nie dodano Test Folder: [TS129] LA - Equador: 0
+Nie dodano Test Folder: [TS143] Mexico: 0
+Nie dodano Test Folder: [TS168] US: 0
+Nie dodano Test Folder: [TS169] PGC: 0
+Nie dodano Test Folder: [TS187] LADMAR - Ecuador: 0
+Nie dodano Test Folder: [TS188] LADMAR - Guatemala: 0
+Nie dodano Test Folder: [TS200] Colombia: 0
+Nie dodano Test Folder: [TS212] GDM US - Sanity: 0
+Nie dodano Test Folder: [TS213] GDM - Sanity: 0
+Nie dodano Test Folder: [TS224] LADMAR - Guatemala: 0
+Nie dodano Test Folder: [TS236] LADMAR [regression]: 0
+Nie dodano Test Folder: [TS237] LADMAR GDM [regression]: 0
+Nie dodano Test Folder: [TS252] GRISC - [Canada PGP] Regression: 0
+Nie dodano Test Folder: [TS274] LADMAR - [LADMAR GDM] Regression: 0
+Nie dodano Test Folder: [TS291] LA - [Colombia] New Functionalities: 0
+Nie dodano Test Folder: [TS303] Canada - [DevOps check]: 0
+Nie dodano Test Folder: [TS315] LADMAR GDM - [DevOps check]: 0
+Nie dodano Test Folder: [TS328] LADMAR GDM - [DV check]: 0
+Nie dodano Test Folder: [TS344] [UAT 2.5] Chile: 0
+Nie dodano Test Folder: [TS346] [UAT 2.5] Colombia: 0
+Nie dodano Test Folder: [TS354] [UAT 2.5] Greece Pharma mobile: 0
+Nie dodano Test Folder: [TS355] [UAT 2.5] Italy: 0
+Nie dodano Test Folder: [TS365] [EU][Greece Pharma Mobile] New Functionalities: 0
+Nie dodano Test Folder: [TS377] [LA][Peru] New Functionalities: 0
+Nie dodano Test Folder: [TS391] [EU][Italy] Regression: 0
+Nie dodano Test Folder: [TS404] [LADMAR][Ecuador] Regression: 0
+Nie dodano Test Folder: [TS445] [DevOps Check] Pre-UAT Validation: 0
+Nie dodano Test Folder: [TS457] [2.6 UAT] LADMAR (UR & PR): 0
+Nie dodano Test Folder: [TS468] [2.6 UAT][Regression] LADMAR (UR & PR): 0
+Nie dodano Test Folder: [TS480] [2.6 UAT][Regression] PGC: 0
+Nie dodano Test Folder: [TS494] [New Functionalities] Canada: 0
+Nie dodano Test Folder: [TS505] [New Functionalities] Ecuador: 0
+Nie dodano Test Folder: [TS518] [MD Validation] AT: 0
+Nie dodano Test Folder: [TS519] [MD Validation] CH: 0
+Nie dodano Test Folder: [TS529] [DevOps Check] Pre-UAT Validation: 0
+Nie dodano Test Folder: [TS530] [Regression] DACH AT Food: 0
+Nie dodano Test Folder: [TS540] [Regression] Greece Pharma Mobile: 0
+Nie dodano Test Folder: [TS551] [Regression] Mexico: 0
+Nie dodano Test Folder: [TS565] [New Functionalities] DACH AT Non-Food: 0
+Nie dodano Test Folder: [TS581] [New Functionalities] PGC: 0
+Nie dodano Test Folder: [TS591] [Regression] Mexico: 0
+Nie dodano Test Folder: [TS602] [Regression] DACH DE Food: 0
+Nie dodano Test Folder: [TS613] [New Functionalities] Costa Rica: 0
+Nie dodano Test Folder: [TS623] DACH AT Food: 0
+Nie dodano Test Folder: [TS635] Chile: 0
+Nie dodano Test Folder: [TS649] [DC Testing] Rollouts + GA: 0
+Nie dodano Test Folder: [TS660] [New Functionalities] Greece Pharma Mobile: 0
+Nie dodano Test Folder: [TS663] [New Functionalities] Canada: 0
+Nie dodano Test Folder: [TS673] [New Functionalities] LADMAR FOM (UR PR): 0
+Nie dodano Test Folder: [TS674] [New Functionalities] Costa Rica: 0
+Nie dodano Test Folder: [TS683] [Regression] DACH CH Non-Food: 0
+Nie dodano Test Folder: [TS684] [Regression] DACH CH Food: 0
+Nie dodano Test Folder: [TS707] [Regression] LADMAR GDM US: 0
+Nie dodano Test Folder: [TS721] [Regression] LADMAR GDM: 0
+Nie dodano Test Folder: [TS731] [Regression] US PGP: 0
+Nie dodano Test Folder: [TS744] [Regression] DACH DE Non-Food: 0
+Nie dodano Test Folder: [TS754] Mexico: 0
+Nie dodano Test Folder: [TS767] DACH AT Non-Food: 0
+Nie dodano Test Folder: [TS839] [Regression] LADMAR GDM US: 0
+Nie dodano Test Folder: [TS850] [Regression] US: 0
+Nie dodano Test Folder: [TS862] [Regression] DACH AT PGP: 0
+Nie dodano Test Folder: [TS873] Costa Rica: 0
+Nie dodano Test Folder: [TS874] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TS885] Canada: 0
+Nie dodano Test Folder: [TS897] DACH DE Non-Food: 0
+Nie dodano Test Folder: [TS910] [Regression] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TS921] [Regression] Canada: 0
+Nie dodano Test Folder: [TS926] [Regression] Greece: 0
+Nie dodano Test Folder: [TS937] LADMAR GDM US: 0
+Nie dodano Test Folder: [TS948] US: 0
+Nie dodano Test Folder: [TS961] DACH CH Food: 0
+Nie dodano Test Folder: [TS971] [Regression] Costa Rica: 0
+Nie dodano Test Folder: [TS972] [Regression] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TS982] [Regression] Canada PGP: 0
+Nie dodano Test Folder: [TS994] [Regression] DACH DE PGP: 0
+Nie dodano Test Folder: [TS995] [Regression] DACH DE Non-Food: 0
+Nie dodano Test Folder: [TS1004] Peru: 0
+Nie dodano Test Folder: [TS1014] Canada: 0
+Nie dodano Test Folder: [TS1026] DACH DE Non-Food: 0
+Nie dodano Test Folder: [TS1047] Italy Retail: 0
+Nie dodano Test Folder: [TS1057] [MD SIT] PGC EU: 0
+Nie dodano Test Folder: [TS1068] SCOPE FOR isara: 0
+Nie dodano Test Folder: [TS1079] DACH DE Food: 0
+Nie dodano Test Folder: [TS1090] Canada: 0
+Nie dodano Test Folder: [TS1101] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TS1112] [Regression] DACH CH Food: 0
+Nie dodano Test Folder: [TS1113] [Regression] DACH AT PGP: 0
+Nie dodano Test Folder: [TS1123] [Regression] US: 0
+Nie dodano Test Folder: [TS1124] [Regression] Argentina: 0
+Nie dodano Test Folder: [TS1133] [Regression] LADMAR GDM: 0
+Nie dodano Test Folder: [TS1134] [Regression] LADMAR GDM US: 0
+Nie dodano Test Folder: [TS1176] DACH DE Food: 0
+Nie dodano Test Folder: [TS1186] Italy Retail: 0
+Nie dodano Test Folder: [TS1187] Italy ELECTRO: 0
+Nie dodano Test Folder: [TS1197] Argentina: 0
+Nie dodano Test Folder: [TS1208] PGC NA: 0
+Nie dodano Test Folder: [TS1209] [Regression] DACH DE Food: 0
+Nie dodano Test Folder: [TS1219] [Regression] Greece Mobile: 0
+Nie dodano Test Folder: [TS1230] [Regression] Puerto Rico: 0
+Nie dodano Test Folder: [TS1231] [Regression] US PGP: 0
+Nie dodano Test Folder: [TS1241] [Regression] Ecuador: 0
+Nie dodano Test Folder: [TS1253] Italy POH Mobile: 0
+Nie dodano Test Folder: [TS1278] DACH CH Food: 0
+Nie dodano Test Folder: [TS1289] Puerto Rico: 0
+Nie dodano Test Folder: [TS1300] Ecuador: 0
+Nie dodano Test Folder: [TS1301] LADMAR GDM: 0
+Nie dodano Test Folder: [TS1310] [Regression] DACH CH Food: 0
+Nie dodano Test Folder: [TS1311] [Regression] DACH AT PGP: 0
+Nie dodano Test Folder: [TS1320] [Regression] Canada PGP: 0
+Nie dodano Test Folder: [TS1330] [Regression] LADMAR FOM (UR & PR): 0
+Nie dodano Test Folder: [TS1341] Italy B2B PGP: 0
+Nie dodano Test Folder: [TS1352] Colombia: 0
+Nie dodano Test Folder: [TS1353] Mexico: 0
+Nie dodano Test Folder: [TS1363] [Regression] Brazil: 0
+Nie dodano Test Folder: [TS1376] Italy ELECTRO: 0
+Nie dodano Test Folder: [TS1388] EU Backend: 0
+Nie dodano Test Folder: [TS131] GDM US: 0
