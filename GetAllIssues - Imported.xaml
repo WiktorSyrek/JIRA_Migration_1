@@ -1,14 +1,18 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="PSFr_JIRA_API_GetAllStories" this:PSFr_JIRA_API_GetAllStories.in_sIssueType="Test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetAllIssues" this:GetAllIssues.in_sIssueType="Test" this:GetAllIssues.in_sAuthorizationKey="d2lrdG9yLnN5cmVrQGRpcmVjdHBsLmNvbTpqRVBOYzc0SmFoZndYS2t3all1Njk2MTA=" this:GetAllIssues.in_sServer="jira-pg.atlassian.net" this:GetAllIssues.in_sProject="10359" this:GetAllIssues.in_sFileOut="C:\Users\syrek.w\Documents\UiPath\JIRA_Migration_1\uat\uat test b2b2.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_sIssueType" Type="InArgument(x:String)" />
+    <x:Property Name="in_sAuthorizationKey" Type="InArgument(x:String)" />
+    <x:Property Name="in_sServer" Type="InArgument(x:String)" />
+    <x:Property Name="in_sProject" Type="InArgument(x:String)" />
+    <x:Property Name="in_sFileOut" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>638,1926</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>PSFr_JIRA_API_GetAllStories_1</sap2010:WorkflowViewState.IdRef>
+  <sap:VirtualizedContainerService.HintSize>638,2192</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>GetAllIssues_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="22">
+    <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -34,7 +38,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -54,40 +58,27 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PSFr_JIRA_API_GetAllStories" sap:VirtualizedContainerService.HintSize="618,1866" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="httpIssues" />
-      <Variable x:TypeArguments="x:Int32" Name="httpResultStatus" />
-      <Variable x:TypeArguments="njl:JObject" Name="jsonIssues" />
-      <Variable x:TypeArguments="x:String" Name="encoded" />
-      <Variable x:TypeArguments="x:Int32" Name="nStartAt" />
-    </Sequence.Variables>
+  <Sequence DisplayName="GetAllIssues" sap:VirtualizedContainerService.HintSize="618,2132" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="576,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PSFr_JIRA_API_setCredentials.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_username">wiktor.syrek@directpl.com</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_password">fc2wrjcJhdDlWnv0W0iz7DB2</InArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_encoded">[encoded]</OutArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="576,1647" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="[&quot;G:\shared drives\mig\Export\export_&quot; + in_sIssueType + &quot;.xlsx&quot;]">
+    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="576,1909" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="[in_sFileOut]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="542,1538" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="542,1800" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
-              <Variable x:TypeArguments="ui:GenericValue" Name="counter" />
+              <Variable x:TypeArguments="x:Int32" Name="counter" />
+              <Variable x:TypeArguments="x:Int32" Name="nStartAt" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -96,13 +87,13 @@
             </sap:WorkflowViewStateService.ViewState>
             <Assign sap:VirtualizedContainerService.HintSize="500,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
-                <OutArgument x:TypeArguments="ui:GenericValue">[counter]</OutArgument>
+                <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="ui:GenericValue">[1]</InArgument>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="500,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign sap:VirtualizedContainerService.HintSize="500,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[nStartAt]</OutArgument>
               </Assign.To>
@@ -110,14 +101,19 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="500,1184" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[nStartAt &lt; 10000]">
-              <Sequence sap:VirtualizedContainerService.HintSize="454,1023" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="500,1446" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[nStartAt &lt; 6000]">
+              <Sequence sap:VirtualizedContainerService.HintSize="454,1285" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="httpIssues" />
+                  <Variable x:TypeArguments="x:Int32" Name="httpResultStatus" />
+                  <Variable x:TypeArguments="njl:JObject" Name="jsonIssues" />
+                </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://jira-pg.atlassian.net/rest/api/2/search?jql=project=SO2%20and%20issuetype=&quot;+in_sIssueType+&quot;&amp;startAt=&quot;+nStartAt.ToString+&quot;&amp;maxResults=100&quot;]" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[httpIssues]" StatusCode="[httpResultStatus]" TimeoutMS="6000">
+                <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://&quot;+in_sServer+&quot;/rest/api/2/search?jql=project=&quot;+in_sProject+&quot;%20and%20issuetype=&quot;+in_sIssueType+&quot;&amp;startAt=&quot;+nStartAt.ToString+&quot;&amp;maxResults=100&quot;]" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[httpIssues]" StatusCode="[httpResultStatus]" TimeoutMS="6000">
                   <ui:HttpClient.Attachments>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.Attachments>
@@ -125,7 +121,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.Cookies>
                   <ui:HttpClient.Headers>
-                    <InArgument x:TypeArguments="x:String" x:Key="Authorization">["Basic " + encoded]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="Authorization">["Basic " + in_sAuthorizationKey]</InArgument>
                   </ui:HttpClient.Headers>
                   <ui:HttpClient.Parameters>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -134,7 +130,9 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.UrlSegments>
                 </ui:HttpClient>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="412,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpResultStatus.ToString + &quot;: &quot; + httpIssues.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="412,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;https://&quot;+in_sServer+&quot;/rest/api/2/search?jql=project=&quot;+in_sProject+&quot;%20and%20issuetype=&quot;+in_sIssueType+&quot;&amp;startAt=&quot;+nStartAt.ToString+&quot;&amp;maxResults=100&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="412,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Basic &quot; + in_sAuthorizationKey]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="412,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;stat code: &quot; + httpResultStatus.ToString]" />
                 <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="412,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonIssues]" JsonString="[httpIssues]" />
                 <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,539" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[jsonIssues(&quot;issues&quot;)]">
                   <ui:ForEach.Body>
@@ -150,12 +148,12 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:ExcelWriteCell Cell="[&quot;A&quot; + counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[item(&quot;key&quot;).ToString]" />
                         <ui:ExcelWriteCell Cell="[&quot;B&quot; + counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[item(&quot;fields&quot;)(&quot;summary&quot;).ToString]" />
-                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
-                            <OutArgument x:TypeArguments="ui:GenericValue">[counter]</OutArgument>
+                            <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="ui:GenericValue">[counter + 1]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
                           </Assign.Value>
                         </Assign>
                       </Sequence>
@@ -177,5 +175,6 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="576,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Generated &quot; + in_sIssueType + &quot;.xlsx file.&quot;]" />
   </Sequence>
 </Activity>

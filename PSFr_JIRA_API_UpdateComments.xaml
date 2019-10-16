@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>446,893</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>438,873</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PSFr_JIRA_API_UpdateComments_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -59,7 +59,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PSFr_JIRA_API_UpdateComments" sap:VirtualizedContainerService.HintSize="406,813" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PSFr_JIRA_API_UpdateComments" sap:VirtualizedContainerService.HintSize="418,813" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="httpResult" />
       <Variable x:TypeArguments="x:Int32" Name="httpStatusCode" />
@@ -71,8 +71,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="368,209" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="{}{&#xA;   'update': {&#xA;      'comment': [&#xA;         {&#xA;            'add': {&#xA;               'body': 'It Is time To finish this task'&#xA;            }&#xA;         }&#xA;      ]&#xA;   }&#xA;}" />
-    <Assign sap:VirtualizedContainerService.HintSize="368,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="376,209" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[requestJSON]" JsonString="{}{&#xA;   'update': {&#xA;      'comment': [&#xA;         {&#xA;            'add': {&#xA;               'body': 'It Is time To finish this task'&#xA;            }&#xA;         }&#xA;      ]&#xA;   }&#xA;}" />
+    <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="njl:JToken">[requestJSON("update")("comment")(0)("add")("body")]</OutArgument>
       </Assign.To>
@@ -80,20 +80,20 @@
         <InArgument x:TypeArguments="njl:JToken">[in_sComment]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence sap:VirtualizedContainerService.HintSize="368,372" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="376,372" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PSFr_JIRA_API_setCredentials.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PSFr_JIRA_API_setCredentials.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_username">wiktor.syrek@directpl.com</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_password">GE94q8tex7qajyiiC4LsA91B</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_password">kpBv7DdJMGJYA0nCeEa4CE0A</InArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="out_encoded">[encoded]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://jira-pg.atlassian.net/rest/api/2/issue/&quot; + in_sKey]" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="PUT" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
+      <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[requestJSON.ToString]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://jira-pg.atlassian.net/rest/api/2/issue/&quot; + in_sKey]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="PUT" Result="[httpResult]" StatusCode="[httpStatusCode]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -110,7 +110,7 @@
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; + httpResult.ToString]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpStatusCode.ToString + &quot;: &quot; + httpResult.ToString]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

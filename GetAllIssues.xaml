@@ -1,13 +1,17 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetAllIssues" this:GetAllIssues.in_sIssueType="Test" this:GetAllIssues.in_sServer="wiksyr1.atlassian.net" this:GetAllIssues.in_sProject="STOR" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:j="clr-namespace:JIRA_REST_API_AUTO;assembly=JIRA_REST_API_AUTO" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetAllIssues" this:GetAllIssues.in_sIssueType="Bug" this:GetAllIssues.in_sServer="jira-pg.atlassian.net" this:GetAllIssues.in_sProject="B2B" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:j="clr-namespace:JIRA_REST_API_AUTO;assembly=JIRA_REST_API_AUTO" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_sIssueType" Type="InArgument(x:String)" />
     <x:Property Name="in_sServer" Type="InArgument(x:String)" />
     <x:Property Name="in_sProject" Type="InArgument(x:String)" />
+    <x:Property Name="in_sfileout" Type="InArgument(x:String)" />
   </x:Members>
+  <this:GetAllIssues.in_sfileout>
+    <InArgument x:TypeArguments="x:String" />
+  </this:GetAllIssues.in_sfileout>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>294,256</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>396,429</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetAllIssues_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -35,7 +39,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -52,9 +56,14 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetAllIssues" sap:VirtualizedContainerService.HintSize="254,176" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetAllIssues" sap:VirtualizedContainerService.HintSize="376,369" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Name="encoded" />
     </Sequence.Variables>
@@ -63,7 +72,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <j:GenerateAuthKey sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="GenerateAuthKey_1" in_password="[&quot;C47xLfh38mfWuGKDJ0rC68DD&quot;]" in_username="[&quot;syrek.w@pg.com&quot;]" out_encoded="[encoded]" />
-    <j:GetAllIssues sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="GetAllIssues_2" in_sAuthorizationKey="[encoded]" in_sIssueType="[in_sIssueType]" in_sProject="[in_sProject]" in_sServer="[in_sServer]" />
+    <j:GenerateAuthKey sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GenerateAuthKey_1" in_password="[&quot;C47xLfh38mfWuGKDJ0rC68DD&quot;]" in_username="[&quot;wiktor.syrek@directpl.com&quot;]" out_encoded="[encoded]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[encoded]" />
+    <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="a" />
+    <j:GetAllIssues sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetAllIssues_2" in_sAuthorizationKey="d2lrdG9yLnN5cmVrQGRpcmVjdHBsLmNvbTpHRTk0cTh0ZXg3cWFqeWlpQzRMc0E5MUI=" in_sFileOut="[in_sfileout]" in_sIssueType="[in_sIssueType]" in_sProject="[in_sProject]" in_sServer="[in_sServer]" />
   </Sequence>
 </Activity>

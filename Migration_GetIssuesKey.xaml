@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Migration" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="408,640" sap2010:WorkflowViewState.IdRef="Migration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Migration" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,555" sap2010:WorkflowViewState.IdRef="Migration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -44,38 +44,32 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Migration" sap:VirtualizedContainerService.HintSize="368,560" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Migration" sap:VirtualizedContainerService.HintSize="376,495" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sIssueType">Story</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">wiksyr1.atlassian.net</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">SO</InArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sIssueType">Bug</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">wiksyr1.atlassian.net</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">SO</InArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="PSFr_JIRA_API_GetAllIComments.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_sIssueType">Test</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">wiksyr1.atlassian.net</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">SO</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
+    <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Terminte" />
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_sIssueType">Test</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">wiksyr1.atlassian.net</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">SO</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">jira-pg.atlassian.net</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">B2B2</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sfileout">C:\Users\syrek.w\Documents\UiPath\JIRA_Migration_1\uat\uat test b2b2.xlsx</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="GetAllIssues.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sIssueType">Sub_task</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sServer">jira-pg.atlassian.net</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sProject">B2B2</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sfileout">C:\Users\syrek.w\Documents\UiPath\JIRA_Migration_1\uat\uat sub-task b2b2.xlsx</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
