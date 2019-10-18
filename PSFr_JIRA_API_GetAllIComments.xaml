@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>951,2979</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>951,3397</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PSFr_JIRA_API_GetAllStories_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -60,7 +60,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PSFr_JIRA_API_GetAllStories" sap:VirtualizedContainerService.HintSize="931,2919" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PSFr_JIRA_API_GetAllStories" sap:VirtualizedContainerService.HintSize="931,3297" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="httpIssues" />
       <Variable x:TypeArguments="x:Int32" Name="httpResultStatus" />
@@ -80,13 +80,13 @@
         <OutArgument x:TypeArguments="x:String" x:Key="out_encoded">[encoded]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="889,2700" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="[&quot;G:\shared drives\mig\Export\export_&quot; + in_sIssueType + &quot;_comments.xlsx&quot;]">
+    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="889,3078" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="[&quot;G:\shared drives\mig\Export\export_&quot; + in_sIssueType + &quot;_comments.xlsx&quot;]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="855,2591" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="855,2969" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="counter" />
             </Sequence.Variables>
@@ -111,8 +111,8 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="813,2237" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[nStartAt &lt; 10000]">
-              <Sequence sap:VirtualizedContainerService.HintSize="767,2076" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="813,2615" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[nStartAt &lt; 10000]">
+              <Sequence sap:VirtualizedContainerService.HintSize="767,2454" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,15 +135,15 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.UrlSegments>
                 </ui:HttpClient>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="725,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[httpResultStatus.ToString + &quot;: &quot; + httpIssues.ToString]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="725,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;TC comments: &quot; + httpResultStatus.ToString]" />
                 <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="725,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonIssues]" JsonString="[httpIssues]" />
-                <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="725,1592" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[jsonIssues(&quot;issues&quot;)]">
+                <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="725,1975" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[jsonIssues(&quot;issues&quot;)]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="njl:JObject">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="njl:JObject" Name="item" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="689,1459" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="689,1841" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="njl:JObject" Name="httpComments" />
                           <Variable x:TypeArguments="x:Int32" Name="httpResultComments" />
@@ -174,7 +174,13 @@
                             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                           </ui:HttpClient.UrlSegments>
                         </ui:HttpClient>
-                        <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="647,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[httpComments]" JsonString="[httpResultC]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="647,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;CComment: &quot; + httpResultComments.ToString]" />
+                        <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="647,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[httpComments]" JsonString="[httpResultC]" />
+                        <If Condition="[httpResultComments &gt; 205]" sap:VirtualizedContainerService.HintSize="647,208" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If.Then>
+                            <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                          </If.Then>
+                        </If>
                         <Assign sap:VirtualizedContainerService.HintSize="647,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                           <Assign.To>
                             <OutArgument x:TypeArguments="ui:GenericValue">[commentsIds]</OutArgument>
@@ -183,13 +189,13 @@
                             <InArgument x:TypeArguments="ui:GenericValue">[""]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="647,625" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[httpComments(&quot;comments&quot;)]">
+                        <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="647,627" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[httpComments(&quot;comments&quot;)]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="njl:JObject">
                               <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="njl:JObject" Name="item" />
+                                <DelegateInArgument x:TypeArguments="njl:JObject" Name="item2" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="611,492" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="611,493" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Int32" Name="httpDelResult" />
                                   <Variable x:TypeArguments="x:String" Name="httpDelResultText" />
@@ -199,7 +205,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://jira-pg.atlassian.net/rest/api/3/issue/&quot; + item(&quot;key&quot;).ToString + &quot;/comment/&quot; + item(&quot;id&quot;).ToString]" sap:VirtualizedContainerService.HintSize="569,22" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="DELETE" Result="[httpDelResultText]" StatusCode="[httpDelResult]" TimeoutMS="6000">
+                                <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;https://jira-pg.atlassian.net/rest/api/3/issue/&quot; + item(&quot;key&quot;).ToString + &quot;/comment/&quot; + item2(&quot;id&quot;).ToString]" sap:VirtualizedContainerService.HintSize="569,22" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="DELETE" Result="[httpDelResultText]" StatusCode="[httpDelResult]" TimeoutMS="6000">
                                   <ui:HttpClient.Attachments>
                                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                   </ui:HttpClient.Attachments>
@@ -216,15 +222,15 @@
                                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                   </ui:HttpClient.UrlSegments>
                                 </ui:HttpClient>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="569,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[httpDelResult.ToString]" />
-                                <If Condition="[commentsIds = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="569,207" sap2010:WorkflowViewState.IdRef="If_1">
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="569,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;DEL: &quot; + httpDelResult.ToString]" />
+                                <If Condition="[commentsIds = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="569,208" sap2010:WorkflowViewState.IdRef="If_1">
                                   <If.Then>
                                     <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="ui:GenericValue">[commentsIds]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="ui:GenericValue">[item("id").ToString]</InArgument>
+                                        <InArgument x:TypeArguments="ui:GenericValue">[item2("id").ToString]</InArgument>
                                       </Assign.Value>
                                     </Assign>
                                   </If.Then>
@@ -234,7 +240,7 @@
                                         <OutArgument x:TypeArguments="ui:GenericValue">[commentsIds]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="ui:GenericValue">[commentsIds + "," + item("id").ToString]</InArgument>
+                                        <InArgument x:TypeArguments="ui:GenericValue">[commentsIds + "," + item2("id").ToString]</InArgument>
                                       </Assign.Value>
                                     </Assign>
                                   </If.Else>

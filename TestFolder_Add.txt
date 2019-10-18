@@ -1,0 +1,35 @@
+Nie dodano Test Folder: [TF1] UAT: 400
+Nie dodano Test Folder: [TF16] Ordering - Master Data - Product: 0
+Nie dodano Test Folder: [TF31] Backend: 0
+Nie dodano Test Folder: [TF47] Backend: 0
+Nie dodano Test Folder: [TF61] DV NA: 0
+Nie dodano Test Folder: [TF75] UK DV: 0
+Nie dodano Test Folder: [TF87] Mini-cart V: 0
+Nie dodano Test Folder: [TF98] User Management V: 0
+Nie dodano Test Folder: [TF99] Webservices configuration: 0
+Nie dodano Test Folder: [TF113] [UAT 2.5] Puerto Rico: 0
+Nie dodano Test Folder: [TF127] CA PGP: 0
+Nie dodano Test Folder: [TF139] US Retail: 0
+Nie dodano Test Folder: [TF151] Pre-UAT: 0
+Nie dodano Test Folder: [TF162] AT Food: 0
+Nie dodano Test Folder: [TF174] CA PGP: 0
+Nie dodano Test Folder: [TF186] LA: 0
+Nie dodano Test Folder: [TF202] [UAT 2.8] Regression: 0
+Nie dodano Test Folder: [TF216] Canada: 0
+Nie dodano Test Folder: [TF228] Ecuador: 0
+Nie dodano Test Folder: [TF240] DACH AT Non-Food: 0
+Nie dodano Test Folder: [TF253] Chile: 0
+Nie dodano Test Folder: [TF265] [UAT 2.8] L2: 0
+Nie dodano Test Folder: [TF277] DACH CH Food: 0
+Nie dodano Test Folder: [TF287] Canada PGP: 0
+Nie dodano Test Folder: [TF298] Costa Rica: 0
+Nie dodano Test Folder: [TF308] DACH CH Food: 0
+Nie dodano Test Folder: [TF319] US: 0
+Nie dodano Test Folder: [TF331] PGC: 0
+Nie dodano Test Folder: [TF342] 2.8.X API GEE: 0
+Nie dodano Test Folder: [TF353] DACH CH Non-Food: 0
+Nie dodano Test Folder: [TF364] US PGP: 0
+Nie dodano Test Folder: [TF376] LADMAR GDM US: 0
+Nie dodano Test Folder: [TF386] US PGP: 0
+Nie dodano Test Folder: [TF387] Puerto Rico: 0
+Nie dodano Test Folder: [TF399] [SIT 2.12] New Functionalities Global: 0

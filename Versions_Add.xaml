@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Versions_Add" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="623,1359" sap2010:WorkflowViewState.IdRef="Versions_Add_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Versions_Add" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="702,1359" sap2010:WorkflowViewState.IdRef="Versions_Add_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -50,15 +50,16 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Versions_Add" sap:VirtualizedContainerService.HintSize="603,1299" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Versions_Add" sap:VirtualizedContainerService.HintSize="682,1299" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="561,1207" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="G:\Shared drives\Mig\B2B Migration\StoreOnline\InputData\Releases\RelasesWithDate.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="640,1207" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="G:\Shared drives\Mig\B2B Migration\StoreOnline\InputData\Releases\oct 15\RelasesWithDate oct 15 2.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -124,9 +125,9 @@
                           <InArgument x:TypeArguments="njl:JToken" x:Key="in_sName">[row(0).ToString()]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_sServer">jira-pg.atlassian.net</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_sAuthorizationKey">d2lrdG9yLnN5cmVrQGRpcmVjdHBsLmNvbTpHRTk0cTh0ZXg3cWFqeWlpQzRMc0E5MUI=</InArgument>
-                          <InArgument x:TypeArguments="njl:JToken" x:Key="in_sProjectId">["10356"]</InArgument>
+                          <InArgument x:TypeArguments="njl:JToken" x:Key="in_sProjectId">["10389"]</InArgument>
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="dtResults">[dtResults]</OutArgument>
-                          <InArgument x:TypeArguments="njl:JToken" x:Key="in_sReleased">[row(5).ToString]</InArgument>
+                          <InArgument x:TypeArguments="njl:JToken" x:Key="in_sReleased">[row(4).ToString]</InArgument>
                           <InArgument x:TypeArguments="njl:JToken" x:Key="in_sReleaseDate">[row(3).ToString()]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
@@ -138,7 +139,7 @@
                           <InArgument x:TypeArguments="x:Double">[counter + 1]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[dtResults]" Delimitator="Comma" DisplayName="Append To CSV" FilePath="G:\Shared drives\Mig\B2B Migration\StoreOnline\InputData\Releases\ReleasesAdded.csv" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+                      <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[dtResults]" Delimitator="Comma" DisplayName="Append To CSV" FilePath="G:\Shared drives\Mig\B2B Migration\StoreOnline\InputData\Releases\ReleasesAdded_oct17.csv" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
                       <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="[&quot;Processing: &quot; +(counter/total*100).ToString+ &quot;%&quot;]" WarnLvl="False" />
                     </Sequence>
                   </ActivityAction>
